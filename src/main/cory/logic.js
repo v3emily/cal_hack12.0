@@ -48,10 +48,11 @@ function handlePlayerClick(clickedId) {
         return;
 
     } if (clickedId === sequence[playerStep]) {
-        playerStep++;
+        playerStep++; 
+
         
         if (playerStep === sequence.length) {
-            if (sequence.length >= 3) {
+            if (sequence.length >= 8) {
                 gameActive = false;
                 // switch projects yo 
                 switchProject();
@@ -67,6 +68,8 @@ function handlePlayerClick(clickedId) {
                 playerStep = 0;
             }, 300);
         }
+    } else {
+    switchProject();
     }
 }
 
