@@ -1,7 +1,7 @@
-const startButton = document.getElementById('startbtn');
+// IMPLEMENT IF TIME
+const startButton = document.getElementById('coryhall');
 startButton.addEventListener('click', switchProject);
 
 function switchProject(event) {
     window.location.href="./../cory/index.html";
-    // window.location.href="./overworld.html";
 }

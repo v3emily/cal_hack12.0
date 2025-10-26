@@ -38,15 +38,23 @@ function addNextTile() {
     sequence.push(randomId);
 }
 
+function switchProject() {
+    window.location.href="./../gameover.html";
+}
+
 function handlePlayerClick(clickedId) {
-    if (!gameActive) return;
-    
-    if (clickedId === sequence[playerStep]) {
+    if (!gameActive) {
+        switchProject();
+        return;
+
+    } if (clickedId === sequence[playerStep]) {
         playerStep++;
         
         if (playerStep === sequence.length) {
             if (sequence.length >= 3) {
                 gameActive = false;
+                // switch projects yo 
+                switchProject();
                 return;
             }
             

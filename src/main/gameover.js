@@ -1,4 +1,4 @@
-const startButton = document.getElementById('startbtn');
+const startButton = document.getElementById('restartbtn');
 startButton.addEventListener('click', switchProject);
 
 function switchProject(event) {
